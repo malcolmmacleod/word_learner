@@ -1,0 +1,24 @@
+To create a new rails project I entered:
+rails new word_learner --skip-test-unit
+
+rails new creates the project
+
+--skip-test-unit skips the creation of unit tests by default - we will add more later
+
+
+Gemfile contains details of the ruby Gems that our application will use.
+We are going to include the rspec-rails gem for unit testing.
+Rspec is installed by default when we install rspec-rails.
+
+Also we are including the capybara gem.
+
+And for production we are using the postgres database.  We are using sqlite for dev and test.
+
+Once we have specified the appropriate gems to use in the gemfile, we install the gems using:
+
+bundle install --without production
+
+This installs most of the gems in the Gemfile, with the exception of the gems specified with the production symbol
+
+
+
